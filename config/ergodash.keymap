@@ -20,7 +20,7 @@
                 default_layer {
 /* QWERTY
  * .------------------------------------------------------------------------------------------------------------------------.
- * |   Esc  |   1  |   2  |   3  |   4  |   5  |VOL_UP|                    |BRI_UP|   6  |   7  |   8  |   9  |   0  | Del  |
+ * |    `   |   1  |   2  |   3  |   4  |   5  |VOL_UP|                    |BRI_UP|   6  |   7  |   8  |   9  |   0  | Del  |
  * |--------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
  * |   Tab  |   Q  |   W  |   E  |   R  |   T  |VOL_DN|                    |BRI_DN|   Y  |   U  |   I  |   O  |   P  | Bspc |
  * |--------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
@@ -28,15 +28,15 @@
  * |--------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
  * |  Shift |   Z  |   X  |   C  |   V  |   B  |      |                    |      |   N  |   M  |   ,  |   .  |   /  |Shift |
  * |--------+------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
- * |    '   |   \  |   `  | Win  |||||||| Enter| Alt  | Lower|||||||| Raise| RAlt | Space||||||||   -  |   [  |   ]  |  =   |
+ * |        |      | Win  |  Alt |||||||| Enter|   [  |   -  ||||||||  =   |  ]   | Space|||||||| Alt  |Raise |      |      |
  * .------------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
-&kp  ESC        &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5       &kp  C_VOL_UP          &kp LG(LC(LS(RBKT))) &kp  N6       &kp  N7       &kp  N8       &kp  N9       &kp  N0       &kp  DEL
-&kp  TAB        &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T        &kp  C_VOL_DN          &kp LG(LC(LS(LBKT))) &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSPC
-&mt  LCTRL ESC  &kp  A        &kp  S        &kp  D        &kp  F        &kp  G        &kp  C_MUTE            &none                &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  RCTRL
+&kp  GRAVE      &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5       &kp  C_VOL_UP          &kp LG(LC(LS(RBKT))) &kp  N6       &kp  N7       &kp  N8       &kp  N9       &kp  N0       &kp  BSPC
+&kp  TAB        &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T        &kp  C_VOL_DN          &kp LG(LC(LS(LBKT))) &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSLH
+&mt  LCTRL ESC  &kp  A        &kp  S        &kp  D        &kp  F        &kp  G        &kp  C_MUTE            &none                &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  SQT
 &kp  LSHFT      &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &none                  &none                &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
-&kp  SQT        &kp  BSLH     &kp  GRAVE    &kp  LMETA    &kp  ENTER    &kp  LALT     &mo  LOWER             &mo  RAISE           &kp  RALT     &kp  SPACE    &kp  MINUS    &kp  LBKT     &kp  RBKT     &kp  EQUAL
+&none           &none         &kp  LMETA    &kp  LALT     &kp  ENTER    &kp  LBKT     &kp  MINUS             &kp  EQUAL           &kp  RBKT     &kp  SPACE    &kp  RALT     &mo  RAISE    &none         &none
                         >;
                 };
                 lower_layer {
